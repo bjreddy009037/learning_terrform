@@ -1,5 +1,5 @@
 resource "aws_security_group" "allow_all" {
-  name        = "for-sg-${COMPONENT}"
+  name        = "for-sg-${"COMPONENT"}"
   description = "Allow SSH inbound traffic"
 
   ingress {
