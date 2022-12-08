@@ -28,6 +28,6 @@ resource "aws_security_group" "allow_all" {
   }
 
   tags = {
-    Name = var.COMPONENT
+    Name = "for-sg-${var.COMPONENT}"
   }
 }
