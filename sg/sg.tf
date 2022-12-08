@@ -23,3 +23,7 @@ resource "aws_security_group" "allow_all" {
     Name = "allow_all"
   }
 }
+
+output "SG_ID" {
+  value = aws_security_group.allow_all.id
+}
